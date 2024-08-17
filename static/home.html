@@ -22,13 +22,48 @@
         gtag('js', new Date());
         gtag('config', 'G-PC9KFJ31NH');
     </script>
+    <style>
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .topbar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .left-buttons, .right-section {
+                display: none;
+            }
+            .center-form {
+                width: 100%;
+            }
+            .search {
+                width: 80%;
+            }
+            .submit-button {
+                font-size: 1.2rem;
+            }
+            .tabbar {
+                display: none;
+            }
+        }
+        @media (max-width: 480px) {
+            .search {
+                width: 90%;
+                font-size: 1rem;
+            }
+            .submit-button {
+                font-size: 1rem;
+            }
+            .topbar {
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 
-<body style="background-image: url(./assets/img/eq-main.jpg); overflow-y: hidden;">
+<body style="background-image: url('./assets/img/eq-main.jpg'); background-size: cover; overflow: hidden;">
 
     <div class="topbar">
         <div class="left-buttons">
-
             <a id="left" href="/" class="<%= path === '/' ? 'nav-active' : 'nav-btn' %>">
                 <span><i class="fas fa-arrow-left"></i></span>
             </a>
@@ -40,8 +75,7 @@
             </a>
         </div>
         <form id="form" class="center-form">
-            <input autofocus autocomplete="off" class="search" id="search" placeholder="Search the web or enter a URL"
-                required />
+            <input autofocus autocomplete="off" class="search" id="search" placeholder="Search the web or enter a URL" required />
             <button type="submit" class="submit-button">
                 <i class="fas fa-search searchicon"></i>
             </button>
@@ -61,8 +95,7 @@
         </div>
     </div>
     <div id="iframe-container" style="height: 100%; width: 100%">
-        <iframe id="ifr" style="display: block; height: 100%; width: 100%; border: none;" src="/search.html"
-            data-tab="1"></iframe>
+        <iframe id="ifr" style="display: block; height: 100%; width: 100%; border: none;" src="/search.html" data-tab="1"></iframe>
     </div>
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/proxy.js" defer></script>
@@ -79,16 +112,16 @@
         })({})
     </script>
     <script>
-            (function (bcvnjr) {
-                var d = document,
-                    s = d.createElement('script'),
-                    l = d.scripts[d.scripts.length - 1];
-                s.settings = bcvnjr || {};
-                s.src = "\/\/wellwornpick.com\/cVD\/9.6\/bJ2Z5hlISkW\/QU9nNkTaMh0\/NdT_YqxeOVSP0\/1YMnz_Qi1fN\/jhIjwj";
-                s.async = true;
-                s.referrerPolicy = 'no-referrer-when-downgrade';
-                l.parentNode.insertBefore(s, l);
-            })({})
+        (function (bcvnjr) {
+            var d = document,
+                s = d.createElement('script'),
+                l = d.scripts[d.scripts.length - 1];
+            s.settings = bcvnjr || {};
+            s.src = "\/\/wellwornpick.com\/cVD\/9.6\/bJ2Z5hlISkW\/QU9nNkTaMh0\/NdT_YqxeOVSP0\/1YMnz_Qi1fN\/jhIjwj";
+            s.async = true;
+            s.referrerPolicy = 'no-referrer-when-downgrade';
+            l.parentNode.insertBefore(s, l);
+        })({})
     </script>
 </body>
 
